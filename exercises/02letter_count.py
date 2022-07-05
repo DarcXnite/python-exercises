@@ -1,5 +1,16 @@
 # Write a function called `letter_count` to count the letter
 # occurrence in a string. Use a dictionary.
+def letter_count(string):
+    dd = {}
+    for letter in string:
+        if letter not in dd:
+            dd[letter] = 1
+        else:
+            dd[letter] += 1
+    return dd
+
+
+print(letter_count('superpower'))
 #
 # You can iterate over a string one letter at a time using
 # a for loop.
